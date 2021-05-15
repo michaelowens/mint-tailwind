@@ -1,0 +1,28 @@
+{
+  "name": "mint-tailwind",
+  "version": "1.0.0",
+  "description": "Boilerplate for mint with tailwind 2.0",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "postinstall": "mint install",
+    "build:css": "postcss styles/style.css -o assets/style.css",
+    "watch:css": "onchange -i '*.config.js' -- npm run build:css",
+    "watch:mint": "mint start",
+    "dev": "concurrently 'npm:watch:*'",
+    "test": "mint test",
+    "build": "npm run build:css && mint build"
+  },
+  "keywords": [],
+  "author": "Michael Owens",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "concurrently": "^6.1.0",
+    "onchange": "^7.1.0",
+    "postcss": "^8.2.15",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.2"
+  }
+}
