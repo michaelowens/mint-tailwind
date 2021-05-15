@@ -31,3 +31,7 @@ NODE_ENV=production npm run build
 ```
 
 This will make a production build for tailwind before running mint build.
+
+## VSCode
+
+To get autocomplete for tailwind classes, install [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) and go to the extension settings. Under "Include Languages" you can add `mint` with the value `html`.
